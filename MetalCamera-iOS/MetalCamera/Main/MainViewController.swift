@@ -12,8 +12,8 @@ import CoreMedia
 
 final class MainViewController: UIViewController {
     
-    @IBOutlet weak var mainMetalView: MetalView!
-    private var mainVideoCapture: VideoCapture!
+    @IBOutlet weak var metalView: MetalView!
+    private var videoCapture: VideoCapture!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +22,11 @@ final class MainViewController: UIViewController {
     }
     
     private func setUpCamera() {
-        mainVideoCapture = VideoCapture()
-        mainVideoCapture.delegate = self
-        mainVideoCapture.setUp(sessionPreset: AVCaptureSession.Preset.hd1280x720, frameRate: 60) { success in
+        videoCapture = VideoCapture()
+        videoCapture.delegate = self
+        videoCapture.setUp(sessionPreset: AVCaptureSession.Preset.hd1280x720, frameRate: 60) { success in
             if success {
-                self.mainVideoCapture.start()
+                self.videoCapture.start()
             }
         }
     }
@@ -41,7 +41,7 @@ extension MainViewController: VideoCaptureDelegate {
     func videoCapture(_ capture: VideoCapture, didCaptureVideoFrame pixelBuffer: CVPixelBuffer?, timestamp: CMTime) {
         
         DispatchQueue.main.async {
-            self.mainMetalView.pixelBuffer = pixelBuffer
+            self.metalView.pixelBuffer = pixelBuffer
         }
     }
 }

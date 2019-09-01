@@ -13,8 +13,18 @@
 		6018089422E871F3009057A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6018089222E871F3009057A8 /* LaunchScreen.storyboard */; };
 		601808A522E87342009057A8 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601808A422E87342009057A8 /* MetalView.swift */; };
 		601808A722E8751F009057A8 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601808A622E8751F009057A8 /* VideoCapture.swift */; };
-		601808AA22E876B9009057A8 /* mainShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 601808A922E876B9009057A8 /* mainShaders.metal */; };
+		601808AA22E876B9009057A8 /* passthroughKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 601808A922E876B9009057A8 /* passthroughKernel.metal */; };
 		609EFCB6231B226C00387076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609EFCB5231B226C00387076 /* Assets.xcassets */; };
+		609EFCBA231BA5A000387076 /* brightnessKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCB9231BA5A000387076 /* brightnessKernel.metal */; };
+		609EFCBC231BA7B500387076 /* inversionKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCBB231BA7B500387076 /* inversionKernel.metal */; };
+		609EFCC0231BAA3900387076 /* lighthouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 609EFCBF231BAA3900387076 /* lighthouse.jpg */; };
+		609EFCC2231BB1A800387076 /* contrastKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCC1231BB1A800387076 /* contrastKernel.metal */; };
+		609EFCC4231BB2E200387076 /* rgba2bgraKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCC3231BB2E200387076 /* rgba2bgraKernel.metal */; };
+		609EFCC6231BB41400387076 /* exposureKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCC5231BB41400387076 /* exposureKernel.metal */; };
+		609EFCC8231BB4EF00387076 /* gammaKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCC7231BB4EF00387076 /* gammaKernel.metal */; };
+		609EFCCA231BB5FC00387076 /* grayscaleKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCC9231BB5FC00387076 /* grayscaleKernel.metal */; };
+		609EFCCC231BB70700387076 /* pixellateKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCCB231BB70700387076 /* pixellateKernel.metal */; };
+		609EFCCE231BC5B500387076 /* boxBlurKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = 609EFCCD231BC5B500387076 /* boxBlurKernel.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +36,18 @@
 		6018089522E871F3009057A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		601808A422E87342009057A8 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		601808A622E8751F009057A8 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
-		601808A922E876B9009057A8 /* mainShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = mainShaders.metal; sourceTree = "<group>"; };
+		601808A922E876B9009057A8 /* passthroughKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = passthroughKernel.metal; sourceTree = "<group>"; };
 		609EFCB5231B226C00387076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		609EFCB9231BA5A000387076 /* brightnessKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = brightnessKernel.metal; sourceTree = "<group>"; };
+		609EFCBB231BA7B500387076 /* inversionKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = inversionKernel.metal; sourceTree = "<group>"; };
+		609EFCBF231BAA3900387076 /* lighthouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lighthouse.jpg; sourceTree = "<group>"; };
+		609EFCC1231BB1A800387076 /* contrastKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = contrastKernel.metal; sourceTree = "<group>"; };
+		609EFCC3231BB2E200387076 /* rgba2bgraKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = rgba2bgraKernel.metal; sourceTree = "<group>"; };
+		609EFCC5231BB41400387076 /* exposureKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = exposureKernel.metal; sourceTree = "<group>"; };
+		609EFCC7231BB4EF00387076 /* gammaKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = gammaKernel.metal; sourceTree = "<group>"; };
+		609EFCC9231BB5FC00387076 /* grayscaleKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = grayscaleKernel.metal; sourceTree = "<group>"; };
+		609EFCCB231BB70700387076 /* pixellateKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = pixellateKernel.metal; sourceTree = "<group>"; };
+		609EFCCD231BC5B500387076 /* boxBlurKernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = boxBlurKernel.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,7 @@
 		6018089F22E872AD009057A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				609EFCBF231BAA3900387076 /* lighthouse.jpg */,
 				609EFCB5231B226C00387076 /* Assets.xcassets */,
 				6018089522E871F3009057A8 /* Info.plist */,
 			);
@@ -107,8 +128,8 @@
 		601808A822E87693009057A8 /* MetalView */ = {
 			isa = PBXGroup;
 			children = (
+				609EFCB8231BA57900387076 /* Shaders */,
 				601808A422E87342009057A8 /* MetalView.swift */,
-				601808A922E876B9009057A8 /* mainShaders.metal */,
 			);
 			path = MetalView;
 			sourceTree = "<group>";
@@ -119,6 +140,23 @@
 				601808A622E8751F009057A8 /* VideoCapture.swift */,
 			);
 			path = VideoCapture;
+			sourceTree = "<group>";
+		};
+		609EFCB8231BA57900387076 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				601808A922E876B9009057A8 /* passthroughKernel.metal */,
+				609EFCBB231BA7B500387076 /* inversionKernel.metal */,
+				609EFCB9231BA5A000387076 /* brightnessKernel.metal */,
+				609EFCC1231BB1A800387076 /* contrastKernel.metal */,
+				609EFCC3231BB2E200387076 /* rgba2bgraKernel.metal */,
+				609EFCC5231BB41400387076 /* exposureKernel.metal */,
+				609EFCC7231BB4EF00387076 /* gammaKernel.metal */,
+				609EFCC9231BB5FC00387076 /* grayscaleKernel.metal */,
+				609EFCCB231BB70700387076 /* pixellateKernel.metal */,
+				609EFCCD231BC5B500387076 /* boxBlurKernel.metal */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6018089422E871F3009057A8 /* LaunchScreen.storyboard in Resources */,
+				609EFCC0231BAA3900387076 /* lighthouse.jpg in Resources */,
 				609EFCB6231B226C00387076 /* Assets.xcassets in Resources */,
 				6018088F22E871F2009057A8 /* Main.storyboard in Resources */,
 			);
@@ -192,10 +231,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601808AA22E876B9009057A8 /* mainShaders.metal in Sources */,
+				609EFCC8231BB4EF00387076 /* gammaKernel.metal in Sources */,
+				601808AA22E876B9009057A8 /* passthroughKernel.metal in Sources */,
+				609EFCCC231BB70700387076 /* pixellateKernel.metal in Sources */,
+				609EFCCE231BC5B500387076 /* boxBlurKernel.metal in Sources */,
+				609EFCCA231BB5FC00387076 /* grayscaleKernel.metal in Sources */,
 				601808A522E87342009057A8 /* MetalView.swift in Sources */,
 				601808A722E8751F009057A8 /* VideoCapture.swift in Sources */,
+				609EFCC6231BB41400387076 /* exposureKernel.metal in Sources */,
+				609EFCBA231BA5A000387076 /* brightnessKernel.metal in Sources */,
+				609EFCC2231BB1A800387076 /* contrastKernel.metal in Sources */,
+				609EFCC4231BB2E200387076 /* rgba2bgraKernel.metal in Sources */,
 				6018088C22E871F2009057A8 /* MainViewController.swift in Sources */,
+				609EFCBC231BA7B500387076 /* inversionKernel.metal in Sources */,
 				6018088A22E871F2009057A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

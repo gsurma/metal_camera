@@ -28,7 +28,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mainMetalView" destination="sFf-Ts-tNS" id="JNA-D8-nTg"/>
+                        <outlet property="metalView" destination="sFf-Ts-tNS" id="JNA-D8-nTg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
