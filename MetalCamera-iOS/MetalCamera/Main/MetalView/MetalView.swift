@@ -82,13 +82,14 @@ final class MetalView: MTKView {
         var cvTextureOut: CVMetalTexture?
         CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache!, pixelBuffer, nil, .bgra8Unorm, width, height, 0, &cvTextureOut)
         
-//        guard let cvTexture = cvTextureOut, let inputTexture = CVMetalTextureGetTexture(cvTexture) else {
-//            fatalError("Failed to create metal textures")
-//        }
+        guard let cvTexture = cvTextureOut, let inputTexture = CVMetalTextureGetTexture(cvTexture) else {
+            fatalError("Failed to create metal textures")
+        }
         
-        let textureLoader = MTKTextureLoader(device: device!)
-        let inputTexture: MTLTexture = try! textureLoader.newTexture( URL: Bundle.main.url(forResource: "lighthouse", withExtension: "jpg")!, options: nil)
-        
+        // Debug image
+//        let textureLoader = MTKTextureLoader(device: device!)
+//        let inputTexture: MTLTexture = try! textureLoader.newTexture( URL: Bundle.main.url(forResource: "lighthouse", withExtension: "jpg")!, options: nil)
+
         guard let drawable: CAMetalDrawable = self.currentDrawable else { fatalError("Failed to create drawable") }
         
         if let commandQueue = commandQueue, let commandBuffer = commandQueue.makeCommandBuffer(), let computeCommandEncoder = commandBuffer.makeComputeCommandEncoder() {

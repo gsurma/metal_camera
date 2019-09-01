@@ -4,20 +4,50 @@
 
 # Metal Camera
 
-Basic **Swift** implementation of the iOS video camera that uses **GPU Shaders** for the visualization. It contains the following image overlays implemented with **Metal Shading Language**:
+Basic **Swift** implementation of the iOS video camera that uses **GPU Shaders** implemented with **Metal Shading Language**. 
 
-* Blur
-* Contrast
-* Brightness
+## Shaders
 
+* **Passthrough (Original)** 
 
+<img src="assets/passthrough.PNG">
+--
+* **Brightness** 
 
+<img src="assets/brightness.PNG">
+--
+* **Contrast** 
 
-## Implementation
+<img src="assets/contrast.PNG">
+--
+* **Gamma** 
 
-* **Swift** (iOS application)
-* **Metal** (GPU shaders and visualization)
+<img src="assets/gamma.PNG">
+--
+* **Exposure** 
 
+<img src="assets/exposure.PNG">
+--
+* **Grayscale** 
+
+<img src="assets/grayscale.PNG">
+--
+* **Inversion** 
+
+<img src="assets/inversion.PNG">
+--
+* **Rgba2Bgra** 
+
+<img src="assets/rgba2bgra.PNG">
+--
+* **Pixellate** 
+
+<img src="assets/pixellate.PNG">
+--
+* **BoxBlur** 
+
+<img src="assets/boxBlur.PNG">
+--
 
 ## Author
 
