@@ -44,7 +44,7 @@ final class MetalView: MTKView {
         let url = Bundle.main.url(forResource: "default", withExtension: "metallib")
         do {
             let library = try metalDevice.makeLibrary(filepath: url!.path)
-            guard let function = library.makeFunction(name: boxBlurKernel) else {
+            guard let function = library.makeFunction(name: pixellateKernel) else {
                 fatalError("Unable to create gpu kernel")
             }
             computePipelineState = try metalDevice.makeComputePipelineState(function: function)

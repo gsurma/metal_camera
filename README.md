@@ -11,43 +11,43 @@ Basic **Swift** implementation of the iOS video camera that uses **GPU Shaders**
 * **Passthrough (Original)** 
 
 <img src="assets/passthrough.PNG">
---
+---
 * **Brightness** 
 
 <img src="assets/brightness.PNG">
---
+---
 * **Contrast** 
 
 <img src="assets/contrast.PNG">
---
+---
 * **Gamma** 
 
 <img src="assets/gamma.PNG">
---
+---
 * **Exposure** 
 
 <img src="assets/exposure.PNG">
---
+---
 * **Grayscale** 
 
 <img src="assets/grayscale.PNG">
---
+---
 * **Inversion** 
 
 <img src="assets/inversion.PNG">
---
+---
 * **Rgba2Bgra** 
 
 <img src="assets/rgba2bgra.PNG">
---
+---
 * **Pixellate** 
 
 <img src="assets/pixellate.PNG">
---
+---
 * **BoxBlur** 
 
 <img src="assets/boxBlur.PNG">
---
+---
 
 ## Author
 
