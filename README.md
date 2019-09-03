@@ -6,6 +6,13 @@
 
 Basic **Swift** implementation of the iOS video camera that uses **GPU Shaders** implemented with **Metal Shading Language**. 
 
+---
+
+iOS app implemented with shaders from this project:
+
+[<img src="assets/appstore.png">](https://apps.apple.com/us/app/id1476720401)
+
+
 ## Shaders
 
 * **Passthrough (Original)** 
