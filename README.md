@@ -4,7 +4,9 @@
 
 # Metal Camera
 
-Basic **Swift** implementation of the iOS video camera that uses **GPU Shaders** implemented with **Metal Shading Language**. 
+Basic **Swift** implementation of the iOS video camera that uses **GPU Shaders** implemented with **Metal Shading Language**.
+
+Check out corresponding Medium article: [Easy Filters - Intro to GPU Pixel Shaders](https://towardsdatascience.com/easy-filters-intro-to-gpu-pixel-shaders-156dac92b895)
 
 ---
 
